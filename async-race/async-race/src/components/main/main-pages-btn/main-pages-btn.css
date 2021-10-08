@@ -1,0 +1,21 @@
+.main__pages-btn {
+  margin-top: 40px;
+}
+
+.main__prev,
+.main__next {
+  width: 82px;
+  background-color: var(--btn-green);
+  border-bottom: 4px solid var(--border-green);
+}
+
+.main__next {
+  margin-left: 1px;
+}
+
+.unactiv {
+  cursor: auto;
+  pointer-events: none;
+  background-color: grey;
+  border-bottom: 4px solid grey;
+}

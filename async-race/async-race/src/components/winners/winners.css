@@ -1,0 +1,66 @@
+.main__winners {
+  display: none;
+  position: absolute;
+  height: 990px;
+  width: 100%;
+  background-color: rgb(55, 62, 75);
+  z-index: 11;
+}
+
+.table-header,
+.winners__item,
+.winners__item-car {
+  display: flex;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.table-header__word {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.table-number,
+.winners__number {
+  width: 118px;
+}
+
+.table-car,
+.winners__car {
+  width: 88px;
+  height: 18px;
+}
+
+.winners__model {
+  width: 40px;
+}
+
+.table-name,
+.winners__name {
+  width: 103px;
+}
+
+.table-wins,
+.winners__wins {
+  width: 98px;
+}
+
+.wins-arrow-up,
+.wins-arrow-down,
+.time-arrow-up,
+.time-arrow-down {
+  margin-left: 3px;
+  display: none;
+}
+
+.table-wins,
+.table-time {
+  display: flex;
+  cursor: pointer;
+}
+
+.arrowBlock {
+  display: block;
+}

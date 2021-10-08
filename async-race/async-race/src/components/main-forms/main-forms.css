@@ -1,0 +1,52 @@
+.main__forms {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+}
+
+.main__form {
+  display: flex;
+  margin-top: 5px;
+  width: 95%;
+  justify-content: space-between;
+}
+
+.main__input-txt {
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.main__input-color {
+  height: auto;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.input-txt_update {
+  background-color: grey;
+}
+
+.main__btns-group {
+  margin-top: 5px;
+  display: flex;
+  width: 95%;
+  justify-content: space-between;
+}
+
+.main__btn {
+  flex: 7 0 auto;
+}
+
+.main__btn + .main__btn {
+  margin-left: 5px;
+}
+
+.btn-generate {
+  flex-grow: 1;
+}

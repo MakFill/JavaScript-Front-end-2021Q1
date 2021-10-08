@@ -1,0 +1,104 @@
+.main__cars {
+  overflow: hidden;
+  height: fit-content;
+  max-height: 695px;
+}
+
+.cars__select {
+  display: flex;
+  align-items: center;
+  height: 28px;
+  margin-bottom: 14px;
+}
+
+.btn-remove {
+  margin: 0 15px 0 5px;
+}
+
+.cars__name {
+  color: rgb(218, 216, 97);
+}
+
+.cars__interactiv {
+  position: relative;
+  height: 45px;
+  display: flex;
+}
+
+.btn-interactiv {
+  height: fit-content;
+  background-color: transparent;
+  color: var(--btn-green);
+  border-color: var(--btn-green);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.btn-interactiv:hover {
+  cursor: pointer;
+}
+
+.cars__container {
+  left: 54px;
+  position: absolute;
+  z-index: 10;
+  width: calc(100% - 54px);
+}
+
+.cars__model-container {
+  position: relative;
+  display: inline-block;
+  width: fit-content;
+}
+
+.cars__model {
+  position: relative;
+  width: 87px;
+  height: 48px;
+  top: 6px;
+}
+
+.cars__stop {
+  color: #858da5;
+  border-color: #858da5;
+  pointer-events: none;
+  cursor: auto;
+}
+
+.car__stop_activ {
+  color: rgb(248, 38, 38);
+  border-color: rgb(248, 38, 38);
+  cursor: pointer;
+  pointer-events: all;
+}
+
+.car__start_unactiv {
+  pointer-events: none;
+  cursor: auto;
+  color: #858da5;
+  border-color: #858da5;
+}
+
+.car__start_pending {
+  pointer-events: none;
+  cursor: auto;
+  color: #3c63d8;
+  border-color: #3c63d8;
+}
+
+.cars__flag {
+  position: relative;
+  margin-left: auto;
+  right: 105px;
+}
+
+.cars__track {
+  margin: 0 auto 10px;
+  width: 100%;
+  height: 1px;
+  box-sizing: border-box;
+  border-top: dashed #eee;
+}

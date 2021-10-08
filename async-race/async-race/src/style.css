@@ -1,0 +1,16 @@
+:root {
+  --btn-green: #93dd97;
+  --border-green: #5ca05f;
+  --btn-blue: #d1d6e4;
+  --border-blue: #8c9ccc;
+}
+
+html {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: rgb(55, 62, 75);
+  padding: 3px;
+}
