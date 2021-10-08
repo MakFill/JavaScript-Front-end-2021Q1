@@ -1,0 +1,153 @@
+.stat {
+  position: relative;
+  width: 100%;
+  margin: 200px auto 120px;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.stat__container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.stat__header {
+  color: #52adba;
+  font-size: 30px;
+}
+
+.stat__btns,
+.stat__reset-repeat {
+  position: absolute;
+  width: 100%;
+  top: -200px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.stat__btn {
+  background: linear-gradient(180deg, #0099ae 0%, #00bf82 100%);
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  width: 170px;
+  height: 62px;
+  box-shadow: 2px 2px 10px rgb(0 0 0 / 75%);
+  border-radius: 5px;
+  border: none;
+  transition: linear 0.3s;
+}
+
+.stat__btn:hover {
+  box-shadow: 0px 6px 25px rgb(0 0 0 / 75%);
+}
+
+.stat__reset-repeat {
+  top: -100px;
+}
+
+.reset {
+  background: #f84343;
+}
+
+.repeat {
+  background: linear-gradient(40deg, #ffd86f, #fc6262);
+}
+
+.stat__type {
+  flex: 1 0 20%;
+  margin: 2%;
+}
+
+.stat__word {
+  padding: 0 10px;
+  margin-bottom: 5px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.separate-word__type {
+  display: none;
+}
+
+.sorted-item {
+  margin: 2%;
+}
+
+.stat__type-header {
+  text-decoration: underline;
+}
+
+.stat-item__word {
+  font-weight: 700;
+  font-style: italic;
+}
+
+@media (max-width: 1250px) {
+  .stat__btn {
+    flex: 1 0;
+    margin: 2%;
+  }
+}
+
+@media (max-width: 925px) {
+  .stat__container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .fails,
+  .success-rate,
+  .times-guessed,
+  .train-clicks,
+  .alphabet {
+    flex: 1 0 25%;
+    max-width: 178px;
+  }
+
+  .stat {
+    margin-top: 250px;
+  }
+
+  .stat__btns {
+    flex-wrap: wrap;
+    top: -280px;
+  }
+
+  .stat__reset-repeat {
+    top: -64px;
+  }
+
+  .stat__btn {
+    height: 45px;
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 700px) {
+  .stat__container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .stat__container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 350px) {
+  .stat__header {
+    width: 100%;
+  }
+}
