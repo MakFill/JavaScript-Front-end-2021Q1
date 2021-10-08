@@ -1,0 +1,159 @@
+header {
+  margin-bottom: 33px;
+  width: 100%;
+  background-color: var(--header-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24);
+}
+
+.header__container {
+  width: 1440px;
+  margin: 0 auto;
+  display: flex;
+}
+
+h1 {
+  font-size: 1px;
+  color: transparent;
+}
+
+.header__logo {
+  margin: 12px 0 12px 24px;
+  width: 80px;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.header__logo:hover .header__title {
+  color: var(--header-color);
+  background-color: #fff;
+}
+
+.header__logo:hover .header__title_second {
+  color: #fff;
+  background-color: var(--header-color);
+}
+
+.header__title {
+  margin: 0;
+  width: 100%;
+  height: 20px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 20px;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header__title_second {
+  background-color: #fff;
+  color: var(--header-color);
+}
+
+.nav {
+  margin-left: 152px;
+  display: flex;
+}
+
+.nav__item {
+  display: flex;
+  flex-wrap: wrap;
+  width: 96px;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav__item:hover {
+  cursor: pointer;
+  background-color: #1e88e5;
+}
+
+.nav__item_activ {
+  background-color: #1e88e5;
+}
+
+.nav__item_activ:hover {
+  cursor: auto;
+}
+
+.nav__img {
+  margin-top: 6px;
+}
+
+.nav__text {
+  margin: 0 0 7px 0;
+  width: 100%;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 0.4px;
+  color: #fff;
+}
+
+.registr {
+  position: relative;
+  margin-left: auto;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.registr__btn {
+  width: 207px;
+  height: 36px;
+  background-color: #f2f9fe;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  color: var(--header-color);
+  border: none;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2), 0px 1px 18px rgba(0, 0, 0, 0.12),
+    0px 6px 10px rgba(0, 0, 0, 0.14);
+}
+
+.registr__player {
+  position: absolute;
+  right: 0px;
+}
+
+.start__btn,
+.stop__btn,
+.log-out__btn,
+.registr__avatar {
+  display: none;
+}
+
+.start__btn {
+  width: 126px;
+}
+
+.stop__btn {
+  width: 122px;
+}
+
+.log-out__btn {
+  margin-right: 25px;
+  width: 126px;
+}
+
+.registr__avatar {
+  margin-left: 30px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
