@@ -1,0 +1,63 @@
+.timer {
+  display: flex;
+  position: absolute;
+  top: 27px;
+  justify-content: center;
+  align-items: center;
+  width: 256px;
+  height: 64px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24);
+}
+
+.timer__score {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.timer-wrapper {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: 5;
+}
+
+.timer-wrapper__popup {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 360px;
+  background: #fff;
+}
+
+.timer-wrapper__message {
+  margin: 20px 16px 0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.timer-wrapper__btn {
+  margin: 8px 153px 13px;
+  padding: 10px 16px;
+  background-color: var(--header-color);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 4px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  color: #fff;
+}

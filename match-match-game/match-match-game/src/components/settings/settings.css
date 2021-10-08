@@ -1,0 +1,34 @@
+.settings {
+  margin-top: 47px;
+  margin-left: 220px;
+  width: 1000px;
+  box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.24), 0px 9px 18px rgba(0, 0, 0, 0.18);
+  padding: 46px;
+}
+
+.settings__name {
+  margin: 0;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.settings__name:nth-child(3) {
+  margin-top: 20px;
+}
+
+.settings__select {
+  width: 256px;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.25px;
+  color: rgba(0, 0, 0, 0.6);
+  border: 1px solid #fff;
+  border-bottom: 1px solid #e5e5e5;
+  outline-color: #fff;
+  background-color: #fff;
+}
