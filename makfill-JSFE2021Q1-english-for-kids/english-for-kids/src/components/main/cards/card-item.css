@@ -1,0 +1,152 @@
+.card-container {
+  display: flex;
+  max-width: 300px;
+  flex: 1 0 20%;
+  margin: 2%;
+  height: 300px;
+  perspective: 3000px;
+}
+
+.card {
+  width: 100%;
+  background: white;
+  transform-style: preserve-3d;
+  transform-origin: right;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.75);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.card:hover {
+  box-shadow: 0px 6px 25px rgb(0 0 0 / 75%);
+}
+
+.card__front,
+.card__back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.card__back {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+}
+
+.card-container.rotate > .card {
+  transform-origin: left;
+  transform: rotateY(180deg) translateX(-100%);
+  -webkit-transform: rotateY(180deg) translateX(-100%);
+  -moz-transform: rotateY(180deg) translateX(-100%);
+  -ms-transform: rotateY(180deg) translateX(-100%);
+  -o-transform: rotateY(180deg) translateX(-100%);
+}
+
+.picture {
+  width: 100%;
+  height: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: height linear 0.3s;
+  border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  -ms-border-radius: 5px 5px 0 0;
+  -o-border-radius: 5px 5px 0 0;
+  -webkit-transition: height linear 0.3s;
+  -moz-transition: height linear 0.3s;
+  -ms-transition: height linear 0.3s;
+  -o-transition: height linear 0.3s;
+}
+
+.right-card {
+  background-color: rgba(255, 255, 255, 0.55);
+  background-blend-mode: color;
+}
+
+.picture-high {
+  height: 100%;
+  border-radius: 5px;
+}
+
+.bottom {
+  position: relative;
+  font-size: 0.75em;
+  text-align: center;
+}
+
+.display-none {
+  display: none;
+}
+
+.name {
+  font-size: 1.75em;
+  font-weight: bold;
+  color: black;
+  margin-top: 8px;
+}
+
+.rotate-svg {
+  fill: #bdbdce;
+  width: 46px;
+  height: 46px;
+  position: relative;
+  bottom: 31px;
+  left: 97px;
+  cursor: pointer;
+}
+
+.rotate-svg:hover {
+  fill: #00bf82;
+}
+
+.back {
+  display: none;
+}
+
+@media (max-width: 1620px) {
+  .name {
+    margin-top: 13px;
+  }
+
+  .rotate-svg {
+    bottom: 35px;
+  }
+
+  .card-container {
+    height: 252px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .card-container {
+    flex: 1 0 30%;
+  }
+}
+
+@media (max-width: 600px) {
+  .card-container {
+    flex: 1 0 50%;
+  }
+}

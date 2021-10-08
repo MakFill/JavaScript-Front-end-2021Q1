@@ -1,0 +1,380 @@
+.toggle-container {
+  width: 122.5px;
+  height: 55px;
+  margin-left: auto;
+  grid-area: main;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  -ms-grid-column-align: center;
+  justify-self: center;
+  cursor: pointer;
+}
+
+.toggle-train,
+.toggle-play {
+  position: absolute;
+  z-index: 10;
+  font-size: 25px;
+}
+
+.toggle-train {
+  left: 54px;
+  top: 12px;
+  display: none;
+}
+
+.toggle-play {
+  top: 12px;
+  left: 15px;
+  display: none;
+}
+
+.toggle-active {
+  display: block;
+}
+
+.toggle {
+  position: absolute;
+  width: 122.5px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+[type='checkbox'] {
+  display: none;
+}
+.check-label {
+  display: block;
+  width: 122.5px;
+  height: 55px;
+  border: none;
+  border-radius: 30px;
+  background: #d7d7d7;
+  cursor: pointer;
+  pointer-events: none;
+  overflow: hidden;
+  background: linear-gradient(40deg, #00bf82, #0099ae);
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+.check-label .face {
+  display: block;
+  position: absolute;
+  z-index: 11;
+  content: '';
+  top: 4.5px;
+  bottom: 0;
+  right: 72.5px;
+  width: 45px;
+  height: 45px;
+  margin: 0;
+  border: none;
+  border-radius: 30px;
+  background: -webkit-linear-gradient(45deg, #dedede 0%, #fff 70%);
+  background: -o-linear-gradient(45deg, #dedede 0%, #fff 70%);
+  background: linear-gradient(45deg, #dedede 0%, #fff 70%);
+  -webkit-transition: all 0.45s ease-in-out;
+  -o-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
+  overflow: hidden;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+[type='checkbox'] + .check-label #background {
+  width: inherit;
+  height: inherit;
+  border: none;
+  border-radius: inherit;
+  background: linear-gradient(40deg, #ffd86f, #fc6262);
+  background: -webkit-linear-gradient(40deg, #ffd86f, #fc6262);
+  background: -o-linear-gradient(40deg, #ffd86f, #fc6262);
+  background: linear-gradient(40deg, #ffd86f, #fc6262);
+  opacity: 0;
+  -webkit-transition: all 0.45s ease-in-out;
+  -o-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
+}
+[type='checkbox']:checked + .check-label #background {
+  opacity: 1;
+}
+.face-container {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+}
+.face {
+  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.25);
+}
+.eye {
+  position: absolute;
+  top: 22.5px;
+  height: 2.5px;
+  width: 6.25px;
+  background: #8e8e8e;
+  border-radius: 0 0 100% 50%;
+}
+.eye.left {
+  left: 7.5px;
+}
+.eye.right {
+  left: 21.25px;
+}
+.mouth {
+  position: absolute;
+  top: 31.25px;
+  left: 14.5px;
+  width: 4.75px;
+  height: 2.5px;
+  background: #8e8e8e;
+  border-radius: 40% 40% 100% 50%;
+}
+[type='checkbox']:checked + .check-label .face {
+  right: 6px;
+}
+[type='checkbox']:checked + .check-label .face .face-container {
+  -webkit-animation: rotateElement forwards 0.3s;
+  animation: rotateElement forwards 0.3s;
+}
+[type='checkbox']:checked + .check-label .face .eye.left,
+[type='checkbox']:checked + .check-label .face .eye.right {
+  -webkit-animation: changeFace forwards 0.3s 0.075s;
+  animation: changeFace forwards 0.3s 0.075s;
+}
+[type='checkbox']:checked + .check-label .face .mouth {
+  -webkit-animation: changeMouth forwards 0.3s 0.075s;
+  animation: changeMouth forwards 0.3s 0.075s;
+}
+[type='checkbox']:checked + .check-label .face .eye.left {
+  left: 10px;
+}
+[type='checkbox']:checked + .check-label .face .eye.right {
+  left: 25px;
+}
+[type='checkbox'] + .check-label .face .face-container {
+  -webkit-animation: rotateElementReverse forwards 0.3s;
+  animation: rotateElementReverse forwards 0.3s;
+}
+[type='checkbox'] + .check-label .face .eye.left,
+[type='checkbox'] + .check-label .face .eye.right {
+  -webkit-animation: changeFaceReverse forwards 0.3s;
+  animation: changeFaceReverse forwards 0.3s;
+}
+[type='checkbox'] + .check-label .face .mouth {
+  -webkit-animation: changeMouthReverse forwards 0.3s;
+  animation: changeMouthReverse forwards 0.3s;
+}
+@-webkit-keyframes rotateElement {
+  0% {
+    left: 0;
+  }
+  25% {
+    left: 40px;
+  }
+  30% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+    left: -40px;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    left: 10px;
+    opacity: 1;
+  }
+}
+@keyframes rotateElement {
+  0% {
+    left: 0;
+  }
+  25% {
+    left: 40px;
+  }
+  30% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+    left: -40px;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    left: 10px;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes changeFace {
+  100% {
+    top: 17px;
+    width: 3.75px;
+    height: 3.75px;
+    background: #8e8e8e;
+    border: none;
+    border-radius: 100%;
+  }
+}
+@keyframes changeFace {
+  100% {
+    top: 17px;
+    width: 3.75px;
+    height: 3.75px;
+    background: #8e8e8e;
+    border: none;
+    border-radius: 100%;
+  }
+}
+@-webkit-keyframes changeMouth {
+  100% {
+    top: 25.5px;
+    left: 11.25px;
+    height: 6.25px;
+    width: 16.25px;
+    background: #8e8e8e;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#8e8e8e), to(#a4a4a4));
+    background-image: -webkit-linear-gradient(top, #8e8e8e, #a4a4a4);
+    background-image: -o-linear-gradient(top, #8e8e8e, #a4a4a4);
+    background-image: linear-gradient(to bottom, #8e8e8e, #a4a4a4);
+    border-radius: 2px 2px 10px 10px;
+    -webkit-border-radius: 2px 2px 10px 10px;
+    -moz-border-radius: 2px 2px 10px 10px;
+    -ms-border-radius: 2px 2px 10px 10px;
+    -o-border-radius: 2px 2px 10px 10px;
+  }
+}
+@keyframes changeMouth {
+  100% {
+    top: 25.5px;
+    left: 11.25px;
+    height: 6.25px;
+    width: 16.25px;
+    background: #8e8e8e;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#8e8e8e), to(#a4a4a4));
+    background-image: -webkit-linear-gradient(top, #8e8e8e, #a4a4a4);
+    background-image: -o-linear-gradient(top, #8e8e8e, #a4a4a4);
+    background-image: linear-gradient(to bottom, #8e8e8e, #a4a4a4);
+    border-radius: 2px 2px 10px 10px;
+    -webkit-border-radius: 2px 2px 10px 10px;
+    -moz-border-radius: 2px 2px 10px 10px;
+    -ms-border-radius: 2px 2px 10px 10px;
+    -o-border-radius: 2px 2px 10px 10px;
+  }
+}
+@-webkit-keyframes rotateElementReverse {
+  0% {
+    left: 0;
+  }
+  25% {
+    left: -40px;
+  }
+  30% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+    left: 40px;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+@keyframes rotateElementReverse {
+  0% {
+    left: 0;
+  }
+  25% {
+    left: -40px;
+  }
+  30% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+    left: 40px;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes changeFaceReverse {
+  0% {
+    top: 17px;
+    width: 3.75px;
+    height: 3.75px;
+    border: none;
+    border-radius: 100%;
+    background: #8e8e8e;
+  }
+}
+@keyframes changeFaceReverse {
+  0% {
+    top: 17px;
+    width: 3.75px;
+    height: 3.75px;
+    border: none;
+    border-radius: 100%;
+    background: #8e8e8e;
+  }
+}
+@-webkit-keyframes changeMouthReverse {
+  0% {
+    top: 25.5px;
+    left: 9px;
+    height: 6.25px;
+    width: 16.25px;
+    background: #8e8e8e;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#8e8e8e), to(#a4a4a4));
+    background-image: -webkit-linear-gradient(top, #8e8e8e, #a4a4a4);
+    background-image: -o-linear-gradient(top, #8e8e8e, #a4a4a4);
+    background-image: linear-gradient(to bottom, #8e8e8e, #a4a4a4);
+    border: none;
+    border-radius: 2px 2px 10px 10px;
+    -webkit-border-radius: 2px 2px 10px 10px;
+    -moz-border-radius: 2px 2px 10px 10px;
+    -ms-border-radius: 2px 2px 10px 10px;
+    -o-border-radius: 2px 2px 10px 10px;
+  }
+  25% {
+    left: 11.25px;
+  }
+}
+@keyframes changeMouthReverse {
+  0% {
+    top: 25.5px;
+    left: 9px;
+    height: 6.25px;
+    width: 16.25px;
+    background: #8e8e8e;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#8e8e8e), to(#a4a4a4));
+    background-image: -webkit-linear-gradient(top, #8e8e8e, #a4a4a4);
+    background-image: -o-linear-gradient(top, #8e8e8e, #a4a4a4);
+    background-image: linear-gradient(to bottom, #8e8e8e, #a4a4a4);
+    border: none;
+    border-radius: 2px 2px 10px 10px;
+    -webkit-border-radius: 2px 2px 10px 10px;
+    -moz-border-radius: 2px 2px 10px 10px;
+    -ms-border-radius: 2px 2px 10px 10px;
+    -o-border-radius: 2px 2px 10px 10px;
+  }
+  25% {
+    left: 11.25px;
+  }
+}

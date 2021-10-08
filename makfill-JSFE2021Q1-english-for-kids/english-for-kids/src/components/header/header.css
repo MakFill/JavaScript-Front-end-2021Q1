@@ -1,0 +1,17 @@
+.header {
+  height: 130px;
+  display: flex;
+  align-items: center;
+}
+
+.stars-container {
+  width: 100%;
+  position: absolute;
+  top: 120px;
+  left: 0;
+}
+
+.star-item {
+  max-width: 64px;
+  width: 8%;
+}

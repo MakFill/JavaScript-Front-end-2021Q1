@@ -1,0 +1,36 @@
+.cards-container {
+  width: 100%;
+  min-height: 373px;
+  max-width: 1600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.statistic-container {
+  width: 80%;
+}
+
+@media (max-width: 1620px) {
+  .cards-container {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .cards-container {
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 800px) {
+  .cards-container {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 600px) {
+  .cards-container {
+    max-width: 320px;
+  }
+}

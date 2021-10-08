@@ -1,0 +1,29 @@
+.final-img-wrapper {
+  position: fixed;
+  display: flex;
+  background-color: white;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+}
+
+.final-img {
+  width: 500px;
+}
+
+.img-errors {
+  display: none;
+  color: #f36767;
+  position: relative;
+  top: 250px;
+  right: 300px;
+  font-size: 35px;
+}
+
+.show-errors {
+  display: block;
+}
