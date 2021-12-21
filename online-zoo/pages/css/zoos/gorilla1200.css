@@ -1,0 +1,9 @@
+@media (max-width: 1400px) {
+  .panda {
+    background-image: url(../../../assets/icons/zoos/panda-open.svg);
+  }
+
+  .gorilla {
+    background-image: url(../../../assets/icons/zoos/gorilla-open-active.svg);
+  }
+}

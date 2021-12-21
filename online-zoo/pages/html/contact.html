@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/contact us/contact.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="120x120"
+      href="../../assets/icons/favicon120.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="../../assets/icons/favicon96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="48x48"
+      href="../../assets/icons/favicon48.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../assets/icons/favicon32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../../assets/icons/favicon16.png"
+    />
+    <title>Online Zoo</title>
+  </head>
+  <body>
+    <div class="header-background">
+      <div class="container">
+        <!-- header -->
+        <header class="head-header">
+          <section class="logo">
+            <a href="../../index.html" class="header-logo">
+              <img src="../../assets/icons/logo.svg" alt="logo" />
+            </a>
+            <h1 class="title">Online Zoo</h1>
+          </section>
+
+          <nav class="header-nav">
+            <ul class="nav-title">
+              <li class="nav-titles">
+                <a class="nav-titles-link" href="../../index.html">About</a>
+              </li>
+              <li class="nav-titles">
+                <a class="nav-titles-link" href="../html/map.html">map</a>
+              </li>
+              <li class="nav-titles">
+                <a class="nav-titles-link" href="./zoos/panda.html">Zoos</a>
+              </li>
+              <li class="nav-titles">
+                <a
+                  class="nav-titles-link active-link"
+                  href="../html/contact.html"
+                  >Contact us</a
+                >
+              </li>
+              <li class="nav-titles">
+                <a
+                  class="nav-titles-link"
+                  href="https://www.figma.com/file/lnK11foY8Aoa6oOlDXovVN/Online-ZOO-Project"
+                  target="_blank"
+                  >Design</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <section class="socials">
+            <a
+              class="social-link"
+              href="https://www.youtube.com"
+              target="_blank"
+            >
+              <img src="../../assets/icons/youtube.png" alt="YouTube" />
+            </a>
+            <a
+              class="social-link"
+              href="https://www.instagram.com"
+              target="_blank"
+            >
+              <img src="../../assets/icons/instagram.png" alt="Instagram" />
+            </a>
+            <a
+              class="social-link"
+              href="https://www.facebook.com"
+              target="_blank"
+            >
+              <img src="../../assets/icons/facebook.png" alt="Facebook" />
+            </a>
+          </section>
+
+          <!-- hiden navigation -->
+
+          <section class="hiden-nav">
+            <img
+              class="close-hamburger"
+              src="../../assets/icons/close-hamburger.svg"
+              alt=""
+            />
+            <nav class="hiden-nav__main">
+              <a class="hiden-nav-link" href="../../index.html">About</a>
+
+              <a class="hiden-nav-link" href="../../pages/html/map.html">map</a>
+
+              <a class="hiden-nav-link" href="../../pages/html/zoos/panda.html"
+                >Zoos</a
+              >
+
+              <a
+                class="hiden-nav-link active-link-hiden"
+                href="../../pages/html/contact.html"
+                >Contact us</a
+              >
+
+              <a
+                class="hiden-nav-link"
+                href="https://www.figma.com/file/lnK11foY8Aoa6oOlDXovVN/Online-ZOO-Project"
+                target="_blank"
+                >Design</a
+              >
+            </nav>
+          </section>
+
+          <!-- Hamburger -->
+          <div class="hamburger">
+            <img src="../../assets/icons/hamburger.svg" alt="select" />
+          </div>
+        </header>
+      </div>
+    </div>
+
+    <!-- main -->
+
+    <main>
+      <section class="img-container">
+        <img
+          class="touch1920"
+          src="../../assets/images/contact_us/touch_the_animal.png"
+          alt="Contact us"
+        />
+        <img
+          class="touch1200"
+          src="../../assets/images/contact_us/touch_the_animal_1200.png"
+          alt="Contact us"
+        />
+      </section>
+
+      <article class="contact container">
+        <section class="contact__text">
+          <h2 class="contact__text_header">Get in touch</h2>
+          <div class="contact__text_par">
+            <p>
+              Whether you have a question, or would like to say hello, we're
+              happy to hear from you. Please use the form to send us a message
+              and we'll get back to you as soon as we can. Whether you have a
+              question, or would like to say hello, we're happy to hear from
+              you. Please use the form to send us a message and we'll get back
+              to you as soon as we can.
+            </p>
+          </div>
+        </section>
+        <section class="contact__form">
+          <form aria-required="" action="#">
+            <label for="name" class="contact__form_label"
+              ><span class="contact__form_star">*</span> Your Name</label
+            >
+            <div class="contact__form_wrapper">
+              <input
+                id="name"
+                class="contact__form_name contact__form_item"
+                type="text"
+                required
+                placeholder="First and last name"
+              />
+              <p class="error-message">Error name</p>
+            </div>
+
+            <label for="address" class="contact__form_label"
+              ><span class="contact__form_star">*</span> Your Email
+              Address</label
+            >
+            <div class="contact__form_wrapper">
+              <input
+                id="address"
+                class="contact__form_address contact__form_item"
+                type="email"
+                required
+                placeholder="Enter your email"
+              />
+              <p class="error-message">Error address</p>
+            </div>
+
+            <label for="subject" class="contact__form_label"
+              ><span class="contact__form_star">*</span> Subject</label
+            >
+            <div class="contact__form_wrapper">
+              <input
+                id="subject"
+                class="contact__form_subject contact__form_item"
+                type="text"
+                required
+                placeholder="Enter the subject"
+              />
+              <p class="error-message">Error subject</p>
+            </div>
+
+            <label for="message" class="contact__form_label"
+              ><span class="contact__form_star">*</span> Message</label
+            >
+            <div class="contact__form_wrapper">
+              <textarea
+                id="message"
+                class="contact__form_message contact__form_item"
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                required
+                placeholder="Enter your message"
+              ></textarea>
+              <p class="error-message">Error subject</p>
+
+              <button class="contact__form_btn">
+                <p>send message</p>
+              </button>
+            </div>
+          </form>
+        </section>
+      </article>
+    </main>
+
+    <!-- footer -->
+
+    <footer>
+      <article class="footer-cont container">
+        <section class="footer__logos">
+          <a
+            href="../../index.html"
+            class="footer__logos_link"
+            title="Online Zoo"
+          >
+            <img
+              class="footer__logos_logo"
+              src="../../assets/icons/footer-logo.svg"
+              alt="Online zoo"
+            />
+          </a>
+
+          <div class="footer__logos_link" title="Yem Digital">
+            <img
+              class="footer__logos_logo"
+              src="../../assets/icons/yem-digital.svg"
+              alt="Yem Digital"
+            />
+          </div>
+
+          <div class="footer__logos_link" title="Rolling Scopes School">
+            <img
+              class="footer__logos_logo"
+              src="../../assets/icons/rs_school_js logo.svg"
+              alt="RS school"
+            />
+          </div>
+        </section>
+
+        <nav class="footer__nav">
+          <ul class="footer__nav_title">
+            <li class="nav-titles">
+              <a class="footer__nav_link" href="../../index.html">About</a>
+            </li>
+            <li class="nav-titles">
+              <a class="footer__nav_link" href="../html/map.html">map</a>
+            </li>
+            <li class="nav-titles">
+              <a class="footer__nav_link" href="./zoos/panda.html">Zoos</a>
+            </li>
+            <li class="nav-titles">
+              <a class="footer__nav_link" href="../html/contact.html"
+                >Contact us</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <section class="footer__button">
+          <button class="footer__btn">
+            <p>donate for volunteers</p>
+          </button>
+        </section>
+      </article>
+
+      <div class="underline container"></div>
+
+      <article class="footer__designed container">
+        <section class="footer__designed_creators">
+          <p>© 2021 DinaK</p>
+          <p>© Yem Digital</p>
+          <p>© RSSchool</p>
+        </section>
+
+        <section class="footer__designed_socials socials">
+          <a class="social-link" href="https://www.youtube.com" target="_blank">
+            <img src="../../assets/icons/youtube.png" alt="YouTube" />
+          </a>
+          <a
+            class="social-link"
+            href="https://www.instagram.com"
+            target="_blank"
+          >
+            <img src="../../assets/icons/instagram.png" alt="Instagram" />
+          </a>
+          <a
+            class="social-link"
+            href="https://www.facebook.com"
+            target="_blank"
+          >
+            <img src="../../assets/icons/facebook.png" alt="Facebook" />
+          </a>
+        </section>
+        <div class="underline media-underline"></div>
+      </article>
+    </footer>
+
+    <script src="../js/burger.js"></script>
+  </body>
+</html>

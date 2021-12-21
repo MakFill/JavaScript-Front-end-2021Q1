@@ -1,0 +1,72 @@
+.watch-online {
+  margin: 0%;
+  background-image: url(../../assets/images/background\(1920\).png);
+  height: 790px;
+  background-position: right 35% bottom 45%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.watch-header {
+  display: grid;
+  padding-top: 129px;
+  grid-template-columns: 7.5fr 4.5fr;
+}
+
+.watch-header h1 {
+  font-weight: 800;
+  font-size: 82px;
+  line-height: 99.96px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #00a092;
+}
+
+.watch-text {
+  display: grid;
+  grid-template-columns: 3.5fr 8.5fr;
+  margin-top: 34px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.watch-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 44px;
+  margin-right: 0%;
+  width: 240px;
+  height: 74px;
+  background: #f58021;
+  border: none;
+  outline-color: #d26004;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  text-decoration: none;
+}
+
+.watch-btn:hover {
+  background: #d26004;
+}
+
+.watch-btn p {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21.94px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.watch-btn img {
+  padding-left: 10px;
+}
+
+.small-bcg {
+  display: none;
+}

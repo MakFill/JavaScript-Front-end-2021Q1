@@ -1,0 +1,552 @@
+@import url(../style.css);
+@import url(../header.css);
+@import url(../media1200.css);
+@import url(../media640.css);
+@import url(../media320.css);
+@import url(../footer.css);
+
+main {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.main__header {
+  max-width: 601px;
+  margin: 40px auto 0;
+  font-size: 54px;
+  line-height: 66px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #20113d;
+  text-align: center;
+}
+
+.main__map {
+  margin: 70px auto 0;
+  width: 100%;
+  height: fit-content;
+  background-image: url(../../../assets/images/map/map.svg);
+  background-size: contain;
+  padding-bottom: 50%;
+}
+
+.main__map_icon {
+  position: relative;
+  width: 141px;
+  height: 182px;
+  display: inline-block;
+  background-position: center;
+}
+
+/* .main__map_icon_active:hover {
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  cursor: pointer;
+} */
+
+.croco {
+  top: 371px;
+  right: 752px;
+  background-image: url(../../../assets/images/map/croco-orange.svg);
+}
+
+.eagle {
+  /* top: 369px;
+  right: 740px; */
+  top: 378px;
+  right: 735px;
+  background-image: url(../../../assets/images/map/eagle-orange.svg);
+  background-repeat: no-repeat;
+}
+
+.eagle-img {
+  opacity: 0;
+  position: relative;
+  bottom: 7px;
+  right: 9px;
+}
+
+.eagle:hover {
+  background-image: none;
+}
+
+.eagle:hover .eagle-img {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.gorilla {
+  top: 461px;
+  right: 60px;
+  background-image: url(../../../assets/images/map/gorilla-orange.svg);
+}
+
+.gorilla-img {
+  opacity: 0;
+  position: relative;
+  bottom: 7px;
+  right: 9px;
+}
+
+.gorilla:hover {
+  background-image: none;
+}
+
+.gorilla:hover .gorilla-img {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.lemur {
+  top: 580px;
+  left: 189px;
+  background-image: url(../../../assets/images/map/lemur-orange.svg);
+}
+
+.lemur-img {
+  opacity: 0;
+  position: relative;
+  bottom: 7px;
+  right: 9px;
+}
+
+.lemur:hover {
+  background-image: none;
+}
+
+.lemur:hover .lemur-img {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.lion {
+  top: 418px;
+  left: 115px;
+  background-image: url(../../../assets/images/map/lion-orange.svg);
+}
+
+.panda {
+  top: 334px;
+  left: 636px;
+  background-image: url(../../../assets/images/map/panda-orange.svg);
+}
+
+.panda-img {
+  opacity: 0;
+  position: relative;
+  bottom: 7px;
+  right: 9px;
+}
+
+.panda:hover {
+  background-image: none;
+}
+
+.panda:hover .panda-img {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.tiger {
+  top: 472px;
+  left: 845px;
+  background-image: url(../../../assets/images/map/tiger-orange.svg);
+}
+
+.coala {
+  top: 586px;
+  left: 1121px;
+  background-image: url(../../../assets/images/map/coala-orange.svg);
+}
+
+@media (max-width: 1400px) {
+  main {
+    max-width: 1198px;
+  }
+
+  .main__header {
+    margin-top: 31px;
+  }
+
+  .main__map {
+    margin-top: 16px;
+    padding-bottom: 47.7%;
+  }
+
+  .eagle {
+    top: 291px;
+    right: 767px;
+  }
+
+  .croco {
+    top: 298px;
+    right: 791px;
+  }
+
+  .lion {
+    top: 322px;
+    left: 25px;
+  }
+
+  .gorilla {
+    top: 370px;
+    right: 166px;
+  }
+
+  .lemur {
+    top: 472px;
+    left: 71px;
+  }
+
+  .tiger {
+    top: 389px;
+    left: 689px;
+  }
+
+  .panda {
+    top: 276px;
+    left: 542px;
+  }
+
+  .coala {
+    top: 474px;
+    left: 947px;
+  }
+
+  footer {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 1199px) {
+  main {
+    max-width: 900px;
+  }
+
+  .main__map {
+    margin-top: 50px;
+    padding-bottom: 54.1%;
+    background-size: cover;
+  }
+
+  .main__map_icon {
+    width: 54px;
+    height: 74px;
+    background-size: cover;
+  }
+
+  .main__header {
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 51px;
+  }
+
+  .eagle {
+    top: 269px;
+    right: 246px;
+  }
+
+  .croco {
+    top: 267px;
+    right: 216px;
+  }
+
+  .lion {
+    top: 294px;
+    left: 199px;
+  }
+
+  .gorilla {
+    top: 326px;
+    left: 154px;
+  }
+
+  .lemur {
+    top: 406px;
+    left: 279px;
+  }
+
+  .tiger {
+    top: 346px;
+    left: 597px;
+  }
+
+  .coala {
+    top: 399px;
+    left: 726px;
+  }
+
+  .panda {
+    top: 258px;
+    left: 548px;
+  }
+
+  .gorilla-img,
+  .panda-img,
+  .lemur-img,
+  .eagle-img {
+    width: 74px;
+    height: 91px;
+  }
+}
+
+@media (max-width: 900px) {
+  main {
+    max-width: 640px;
+  }
+
+  .main__map {
+    padding-bottom: 50%;
+    margin-top: 69px;
+  }
+
+  .eagle {
+    top: 168px;
+    right: 283px;
+  }
+
+  .croco {
+    top: 165px;
+    right: 280px;
+  }
+
+  .lion {
+    top: 186px;
+    left: 85px;
+  }
+
+  .gorilla {
+    top: 213px;
+    left: 16px;
+  }
+
+  .lemur {
+    top: 268px;
+    left: 124px;
+  }
+
+  .panda {
+    top: 174px;
+    left: 345px;
+  }
+
+  .tiger {
+    top: 221px;
+    left: 397px;
+  }
+
+  .coala {
+    top: 260px;
+    left: 505px;
+  }
+}
+
+@media (max-width: 639px) {
+  main {
+    max-width: 500px;
+  }
+
+  .main__header {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 130%;
+    max-width: 301px;
+  }
+
+  .main__map {
+    padding-bottom: 46%;
+    margin-top: 30px;
+  }
+
+  .eagle {
+    top: 123px;
+    right: 301px;
+  }
+
+  .croco {
+    top: 116px;
+    right: 314px;
+  }
+
+  .lion {
+    top: 129px;
+    left: 22px;
+  }
+
+  .gorilla {
+    top: 153px;
+    left: -56px;
+  }
+
+  .lemur {
+    top: 199px;
+    left: 40px;
+  }
+
+  .panda {
+    top: 119px;
+    left: 244px;
+  }
+
+  .tiger {
+    top: 158px;
+    left: 295px;
+  }
+
+  .coala {
+    top: 189px;
+    left: 390px;
+  }
+
+  footer {
+    margin-top: 53px;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    overflow: hidden;
+  }
+
+  main {
+    width: 362px;
+  }
+
+  .main__header {
+    margin-top: 20px;
+    margin-left: calc(50vw - 150px);
+    text-transform: none;
+  }
+
+  .main__map {
+    margin-top: 21px;
+    padding-bottom: 20%;
+    position: relative;
+  }
+
+  .main__map_icon {
+    width: 48px;
+    height: 68px;
+  }
+
+  .gorilla-img,
+  .panda-img,
+  .lemur-img,
+  .eagle-img {
+    width: 67px;
+    height: 86px;
+  }
+
+  .eagle {
+    top: 76px;
+    right: 285px;
+  }
+
+  .croco {
+    top: 1px;
+    right: -71px;
+  }
+
+  .lion {
+    top: 76px;
+    left: -21px;
+  }
+
+  .gorilla {
+    top: 99px;
+    left: -94px;
+  }
+
+  .lemur {
+    top: 137px;
+    left: -15px;
+  }
+
+  .panda {
+    top: 77px;
+    left: 134px;
+  }
+
+  .tiger {
+    top: 99px;
+    left: 199px;
+  }
+
+  .coala {
+    top: 125px;
+    left: 285px;
+  }
+}
+
+@media (max-width: 362px) {
+  .main__map {
+    left: -2px;
+  }
+}
+
+@media (max-width: 354px) {
+  .main__map {
+    left: -5px;
+  }
+}
+
+@media (max-width: 344px) {
+  .main__map {
+    left: -10px;
+  }
+}
+
+@media (max-width: 334px) {
+  .main__map {
+    left: -15px;
+  }
+}
+
+@media (max-width: 324px) {
+  .main__map {
+    left: -20px;
+  }
+
+  .lion {
+    left: -12px;
+  }
+
+  .eagle {
+    right: 282px;
+  }
+
+  .gorilla {
+    top: 115px;
+    left: -90px;
+  }
+
+  .lemur {
+    top: 138px;
+    left: -12px;
+  }
+
+  .tiger {
+    top: 102px;
+    left: 205px;
+  }
+
+  .coala {
+    top: 131px;
+    left: 285px;
+  }
+}
+
+@media (max-width: 320px) {
+  .main__map {
+    left: -23px;
+  }
+}
