@@ -1,0 +1,45 @@
+.welcome-cont {
+  margin-top: 150px;
+}
+
+.welcome-zoo {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  grid-gap: 2vw;
+}
+
+.welcome-text h2,
+.how-text h2 {
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 66px;
+  text-transform: uppercase;
+  color: #00a092;
+}
+
+.welcome-text h2 {
+  margin-top: 68px;
+}
+
+.how-text h2 {
+  margin-top: 113px;
+}
+
+.welcome-text p,
+.how-text p {
+  margin-top: 50px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.short-text {
+  display: none;
+}
+
+.how-work {
+  margin-top: 150px;
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  grid-gap: 2vw;
+}

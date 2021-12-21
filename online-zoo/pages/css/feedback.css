@@ -1,0 +1,431 @@
+.feedback {
+  margin-top: -1px;
+  display: inline-block;
+  background-color: #20113d;
+  background-image: linear-gradient(
+      177.34deg,
+      #20113d 7.26%,
+      rgba(32, 17, 61, 0) 14.89%
+    ),
+    linear-gradient(144.77deg, #20113d 18.53%, rgba(32, 17, 61, 0) 46.43%),
+    url(../../assets/images/gradient-panda.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.feedback__wrapper {
+  margin-left: calc(50% - 700px);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 34.5fr 65.3036fr;
+  grid-column-gap: 40px;
+  margin-top: 199px;
+}
+
+.feedback__text h2 {
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 66px;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 3px;
+}
+
+.feedback__text > p {
+  margin-top: 50px;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 130%;
+  color: #fff;
+}
+
+.feedback__text_btn {
+  /* display: block; */
+  margin: 376px 0 150px calc(50% - 700px);
+  align-items: center;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  border: 1px solid #fff;
+  color: #fff;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  width: 359px;
+  height: 74px;
+  border-radius: 5px;
+  background-color: transparent;
+  text-transform: uppercase;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  font-family: "Montserrat";
+}
+
+.feedback__text_btn:hover {
+  background-color: #00a092;
+  cursor: pointer;
+}
+
+.feedback__text_btn-wrapper {
+  display: flex;
+  margin: 0 auto;
+}
+
+.feedback__text_btn-wrapper img {
+  margin-left: 10px;
+}
+
+.feedback__blocks {
+  /* display: flex;
+  flex-wrap: wrap; */
+  position: relative;
+  width: 1060px;
+  height: fit-content;
+  overflow: hidden;
+}
+
+.feedback__blocks-cont {
+  width: 2200px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  left: -545px;
+  /* left: 0px; */
+}
+
+.feedback-trans {
+  transition: left 0.3s;
+  -webkit-transition: left 0.3s;
+  -moz-transition: left 0.3s;
+  -ms-transition: left 0.3s;
+  -o-transition: left 0.3s;
+}
+
+.feedback__blocks_block + .feedback__blocks_block {
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.feedback__blocks_block:nth-child(5) {
+  margin-left: 0%;
+}
+
+.feedback__blocks_block:nth-child(n + 5) {
+  margin-bottom: 0;
+}
+
+.feedback__blocks_block {
+  width: 515px;
+  height: 463px;
+  background-color: #fff;
+  padding: 47px 50px;
+  color: #000;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 1%;
+  -webkit-border-radius: 1%;
+  -moz-border-radius: 1%;
+  -ms-border-radius: 1%;
+  -o-border-radius: 1%;
+}
+
+.feedback__blocks_block h4 {
+  margin-top: 44px;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 130%;
+}
+
+.feedback__blocks_block p {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.feedback__blocks_block h5 {
+  margin-top: 46px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.feedback__blocks_arrows {
+  display: flex;
+  margin-top: 60px;
+  grid-column-start: 2;
+}
+
+.feedback__arr {
+  opacity: 0;
+}
+
+.feedback__blocks_left-arrow {
+  width: 60px;
+  height: 60px;
+  background-image: url(../../assets/icons/btn-left-white.svg);
+}
+
+.feedback__blocks_left-arrow:hover {
+  cursor: pointer;
+}
+
+.feedback__blocks_left-arrow:hover .feedback__left-arr {
+  opacity: 1;
+}
+
+.feedback__blocks_right-arrow {
+  margin-left: 60px;
+  width: 60px;
+  height: 60px;
+  background-image: url(../../assets/icons/btn-right-white.svg);
+}
+
+.feedback__blocks_right-arrow:hover {
+  cursor: pointer;
+}
+
+.feedback__blocks_right-arrow:hover .feedback__right-arr {
+  opacity: 1;
+}
+
+.slider-markers {
+  display: none;
+  margin: 30px auto 0;
+  width: 92px;
+  height: 8px;
+}
+
+.marker {
+  background-image: url(../../assets/icons/marker.svg);
+  width: 8px;
+}
+
+.marker-active {
+  background-image: url(../../assets/icons/marker-active.svg);
+  width: 8px;
+}
+
+@media (max-width: 1400px) {
+  .feedback {
+    height: max-content;
+    background-image: url(../../assets/images/gradient-panda1200.png);
+  }
+
+  .feedback__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(50% - 560px);
+    margin-top: 101px;
+  }
+
+  .feedback__text {
+    margin-top: 100px;
+  }
+
+  .feedback__text h2 {
+    max-width: 44.7%;
+    letter-spacing: 0px;
+  }
+
+  .feedback__text p {
+    margin-top: 20px;
+    max-width: 49.5%;
+  }
+
+  .feedback__blocks {
+    margin-top: 56px;
+    margin-left: auto;
+  }
+
+  .feedback__blocks_block {
+    position: relative;
+  }
+
+  .feedback__blocks_block h5 {
+    margin-top: 0;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 70px;
+  }
+
+  .feedback__blocks_arrows {
+    margin-top: 101px;
+    margin-left: auto;
+    margin-right: calc(50% - 540px);
+  }
+
+  .feedback__text_btn {
+    margin: 97px 0 150px calc(50% - 465px);
+  }
+}
+
+@media (max-width: 1150px) {
+  .feedback {
+    width: 100%;
+    background-image: url(../../assets/images/panda-gradient640.png);
+    background-size: cover;
+    background-position: bottom;
+  }
+
+  .feedback__wrapper {
+    margin-top: 80px;
+  }
+
+  .feedback__text {
+    margin-top: 80px;
+  }
+
+  .feedback__text h2 {
+    max-width: 80%;
+  }
+
+  .feedback__text p {
+    margin-top: 21px;
+    max-width: 93%;
+  }
+
+  .feedback__blocks {
+    margin-top: 58px;
+    width: 2200px;
+    flex-wrap: nowrap;
+  }
+
+  .feedback__blocks_block {
+    width: 523px;
+    height: 371px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 30px;
+    text-align: center;
+  }
+
+  .feedback__blocks_block img {
+    position: absolute;
+    left: 36px;
+    top: 45px;
+  }
+
+  .feedback__blocks_block p {
+    position: absolute;
+    margin-top: 0;
+    margin-right: 30px;
+    top: 148px;
+  }
+
+  .feedback__blocks_block h4 {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: calc(50% - 113px);
+    align-items: center;
+    width: 226px;
+    text-align: center;
+  }
+
+  .feedback__blocks_block h5 {
+    margin: 30px auto;
+    justify-content: center;
+    bottom: 21px;
+    left: 177px;
+  }
+
+  .feedback__blocks_block + .feedback__blocks_block {
+    margin-left: 20px;
+  }
+
+  .feedback__blocks_arrows {
+    display: none;
+  }
+
+  .feedback__wrapper,
+  .feedback__text_btn {
+    margin-left: 3.125%;
+  }
+
+  .feedback__text_btn {
+    margin-top: 20px;
+    margin-bottom: 752px;
+    width: 369px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .feedback {
+    background-size: contain;
+  }
+}
+
+@media (max-width: 560px) {
+  .feedback {
+    background-image: url(../../assets/images/gradient-panda320.png);
+  }
+
+  .feedback__wrapper {
+    max-width: 300px;
+    margin: 50px auto 0;
+    text-align: center;
+  }
+
+  .feedback__text {
+    margin-top: 40px;
+  }
+
+  .feedback__text h2 {
+    max-width: 100%;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .feedback__text p {
+    max-width: 97%;
+    font-size: 18px;
+    line-height: 150%;
+    margin: 25px auto 0;
+  }
+
+  .feedback__blocks {
+    margin-top: 42px;
+  }
+
+  .feedback__blocks_block {
+    width: 300px;
+    height: 549px;
+    padding: 20px 20px;
+    box-shadow: none;
+  }
+
+  .feedback__blocks_block h4 {
+    margin-top: 96px;
+  }
+
+  .feedback__blocks_block p {
+    margin: 0 auto;
+    position: relative;
+    top: auto;
+    bottom: 6px;
+  }
+
+  .feedback__blocks_block h5 {
+    height: fit-content;
+    margin-top: auto;
+    position: static;
+  }
+
+  .slider-markers {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 113px;
+  }
+
+  .feedback__text_btn {
+    margin: 50px auto 450px;
+    width: 299px;
+    height: 45px;
+  }
+}

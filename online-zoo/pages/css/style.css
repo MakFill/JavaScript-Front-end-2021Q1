@@ -1,0 +1,67 @@
+/* Typography */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap");
+html {
+  overflow-x: hidden;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  position: relative;
+  height: fit-content;
+}
+
+* {
+  margin: 0%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0%;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.header-background {
+  margin: 0%;
+  background-color: #f58021;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.hamburger {
+  display: none;
+  position: relative;
+  z-index: 2;
+  width: 30px;
+  height: 30px;
+}
+
+/* header */
+
+/* Main */
+main {
+  margin: 0%;
+}
+
+/* input[type="number"] {
+  -moz-appearance: textfield;
+} */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.no-active {
+  text-decoration: none;
+  cursor: default;
+}
+
+/* watch-online */
+
+/* Welcome to the zoo / How it works */
+
+/* @media  */

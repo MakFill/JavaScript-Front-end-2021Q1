@@ -1,0 +1,247 @@
+@media (max-width: 1400px) {
+  .container {
+    max-width: 1120px;
+  }
+
+  /* Welcome to the zoo / How it works */
+
+  .welcome-cont {
+    margin-top: 100px;
+  }
+
+  .how-work {
+    margin-top: 50px;
+  }
+
+  .welcome-cont {
+    width: 83.3vw;
+  }
+
+  .welcome-zoo {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    margin-bottom: 6.3vw;
+  }
+
+  .welcome-text h2 {
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    margin-top: 0.5vw;
+  }
+
+  .welcome-text p {
+    display: grid;
+    grid-template-columns: 6.7fr 5.3fr;
+    margin-top: 30px;
+    line-height: 152%;
+  }
+
+  .welcome-zoo img {
+    max-width: 55vw;
+  }
+
+  .how-work {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .how-work img {
+    margin-left: auto;
+    width: 55vw;
+  }
+
+  .how-text {
+    margin-left: auto;
+    width: 55vw;
+  }
+
+  .how-text h2 {
+    margin-top: 0.5vw;
+  }
+
+  .how-text p {
+    margin-top: 30px;
+    width: 46vw;
+  }
+
+  /* Meet some our pets */
+
+  .pet-par {
+    margin-top: 32px;
+  }
+}
+
+@media (max-width: 1200px) {
+  /* watch-online */
+  .watch-online {
+    height: 690px;
+    background-image: url(../../assets/images/background\(1200\).png);
+    background-position: center bottom;
+  }
+
+  .watch-header,
+  .watch-text,
+  .watch-btn {
+    margin-left: 3.25%;
+  }
+
+  .watch-header {
+    display: grid;
+    padding-top: 8.5vw;
+    grid-template-columns: 9fr 3fr;
+  }
+
+  .watch-text {
+    display: grid;
+    grid-template-columns: 3.5fr 8.5fr;
+    margin-top: 1vw;
+  }
+
+  .watch-btn {
+    margin-top: 2vw;
+  }
+
+  /* Welcome to the zoo / How it works */
+
+  /* Your donation makes a difference */
+
+  .don-difference-bcg {
+    margin-top: 101px;
+  }
+
+  .don-difference {
+    grid-template-columns: 7fr 5.2fr;
+    grid-gap: 2.3%;
+  }
+
+  .don-text {
+    margin-left: 4.7vw;
+  }
+
+  .don-par {
+    display: flex;
+    margin-top: 2.75vw;
+  }
+
+  .donate-form {
+    margin-left: 7vw;
+    margin-top: 0.3vw;
+  }
+
+  /* Meet some our pets */
+
+  .our-pets {
+    margin-top: 8.35vw;
+  }
+
+  .pet-header h2 {
+    grid-column-end: 11;
+    margin-left: 0.85vw;
+  }
+
+  .pet-par {
+    grid-template-columns: repeat(31, 1fr);
+  }
+
+  .pet-par p {
+    grid-column-start: 5;
+    grid-column-end: 28;
+  }
+}
+
+@media (max-width: 870px) {
+  /* watch-online */
+  .watch-online {
+    height: 100vw;
+    background: linear-gradient(
+        90.7deg,
+        #ffffff 23.04%,
+        rgba(255, 255, 255, 0) 62.81%
+      ),
+      linear-gradient(180.96deg, #ffffff 0.2%, rgba(255, 255, 255, 0) 5.62%),
+      linear-gradient(219.86deg, #ffffff 0.49%, rgba(255, 255, 255, 0) 6.78%),
+      linear-gradient(141.69deg, #ffffff 13.5%, rgba(247, 247, 247, 0) 22.24%),
+      url(../../assets/images/background\(1200\).png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+  }
+
+  .watch-header,
+  .watch-text,
+  .watch-btn {
+    margin-left: 0;
+  }
+
+  .watch-header {
+    padding: 8.5vw 3vw 0 3vw;
+  }
+
+  .watch-text {
+    grid-template-columns: 4.5fr 3.5fr;
+    margin: 1.9vw 3vw 0 3vw;
+  }
+
+  .watch-btn {
+    margin-top: 3.9vw;
+    margin-left: 3.3vw;
+    width: 285px;
+  }
+
+  /* watch-online */
+  .watch-header {
+    grid-template-columns: 8fr;
+  }
+
+  .watch-header h1 {
+    font-size: 72px;
+    line-height: 87.77px;
+  }
+
+  /* Your donation makes a difference */
+
+  .don-difference-bcg {
+    padding: 50px 0;
+  }
+
+  .don-difference {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+  }
+
+  .don-text,
+  .quick-donate {
+    margin: 0%;
+  }
+
+  .don-par {
+    margin-top: 50px;
+  }
+
+  .donate-form {
+    margin-top: 50px;
+    margin-left: calc(50% - 181px);
+  }
+
+  .donate-input {
+    width: 363px;
+  }
+
+  input[type="number"] {
+    margin-top: 1px;
+    width: 363px;
+    padding-left: 54px;
+    text-align: initial;
+  }
+
+  .input-dollar {
+    top: calc(50% - 10px);
+    left: 38px;
+  }
+
+  .union-img {
+    margin-left: auto;
+  }
+}

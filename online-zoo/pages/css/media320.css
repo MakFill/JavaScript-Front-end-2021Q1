@@ -1,0 +1,97 @@
+@media (max-width: 320px) {
+  .container {
+    max-width: 320px;
+  }
+
+  /* watch-online */
+  .watch-btn {
+    position: relative;
+    margin-top: 8.9vw;
+    z-index: 99;
+  }
+
+  .small-bcg {
+    position: relative;
+    z-index: 2;
+    margin-top: -11px;
+  }
+
+  /* Welcome to the zoo / How it works */
+
+  .welcome-zoo {
+    margin-bottom: 13.5vw;
+  }
+
+  .welcome-zoo img {
+    margin-top: 6vw;
+  }
+
+  .how-work {
+    margin-top: 42px;
+  }
+
+  .welcome-text h2,
+  .how-text h2 {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 31.69px;
+  }
+
+  .welcome-text h2,
+  .how-text h2 {
+    margin-top: 5.5vw;
+  }
+
+  .welcome-text p,
+  .how-text p {
+    display: none;
+    margin-top: 8.48vw;
+  }
+
+  .short-text,
+  .short-text p {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 150%;
+  }
+
+  /* Your donation makes a difference */
+
+  /* .donate-form {
+    margin-top: 9.75vw;
+  }
+
+  .donate-btn p {
+    margin-top: 1vw;
+    margin-left: 0.25vw;
+  }
+
+  .donate-btn .union-img {
+    width: 60px;
+    border-radius: 7%;
+    -webkit-border-radius: 7%;
+    -moz-border-radius: 7%;
+    -ms-border-radius: 7%;
+    -o-border-radius: 7%;
+  } */
+
+  /* Meet some our pets */
+  .our-pets {
+    margin-top: 16vw;
+  }
+
+  .pet-header {
+    display: block;
+    width: 96vw;
+    margin: 0 auto;
+  }
+
+  .pet-header h2 {
+    display: block;
+  }
+
+  .pet-par {
+    width: 96vw;
+    margin: 10.34vw auto 0;
+  }
+}

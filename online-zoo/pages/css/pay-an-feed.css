@@ -1,0 +1,308 @@
+.pay-feed-bcg {
+  margin-top: 150px;
+  background-color: #20113d;
+}
+
+.pay-and-feed {
+  border-top: 0px;
+}
+
+.pay-feed-header {
+  display: inline-block;
+  margin-top: 91px;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 66px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.pay-border {
+  display: grid;
+  grid-template-columns: 1fr 11fr;
+  grid-gap: 2vw;
+  margin-top: 100px;
+  align-items: center;
+}
+
+.pay-number {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 130%;
+  color: #fff;
+}
+
+.pay-line {
+  height: 1px;
+  background-color: #fff;
+  width: 100%;
+  display: inline-block;
+}
+
+.pay-feed-block {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 2.2vw;
+  margin-top: 80px;
+}
+
+.pay-feed-block img {
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+.pay-feed-text {
+  grid-column-start: 7;
+  grid-column-end: 12;
+  margin-top: 20px;
+}
+
+.pay-subheader {
+  margin-top: 30px;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 130%;
+  color: #fff;
+}
+
+.pay-text {
+  margin-top: 50px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #fff;
+}
+
+.feed-btn-wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 2.2vw;
+}
+
+.pay-feed-btn {
+  grid-column-start: 7;
+  grid-column-end: 13;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 49px;
+  margin-right: 0%;
+  width: 240px;
+  height: 74px;
+  background: #f58021;
+  outline: #d26004;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  font-family: "Montserrat";
+}
+
+.pay-feed-btn:hover {
+  background-color: #d26004;
+  cursor: pointer;
+  outline: #d26004;
+}
+
+.pay-feed-btn p {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21.94px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.pay-feed-btn img {
+  padding-left: 10px;
+}
+
+@media (max-width: 1400px) {
+  .pay-feed-header {
+    margin-top: 150px;
+    margin-left: 60px;
+  }
+
+  .pay-border {
+    margin-top: 80px;
+    grid-gap: 0;
+  }
+
+  .border-banan {
+    margin-top: 87px;
+  }
+
+  .pay-border:nth-child(2) {
+    margin-top: 100px;
+  }
+
+  .pay-img {
+    width: 100%;
+  }
+
+  .pay-monkey {
+    margin-top: 35px;
+  }
+
+  .pay-feed-block {
+    text-align: center;
+    align-items: center;
+    grid-gap: 1.67vw;
+    margin-top: 62px;
+  }
+
+  .pay-feed-block img {
+    grid-column-start: 1;
+    grid-column-end: 7;
+  }
+
+  .pay-feed-text {
+    margin-top: 0;
+    grid-column-start: 7;
+    grid-column-end: 13;
+    text-align: center;
+    align-items: center;
+  }
+
+  .pay-subheader {
+    margin: 26px auto 0;
+    max-width: 98%;
+  }
+
+  .pay-text {
+    margin-top: 30px;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .feed-btn-wrapper {
+    grid-gap: 1.67vw;
+  }
+
+  .pay-feed-btn {
+    width: 266px;
+    margin-top: 103px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .pay-feed-bcg {
+    margin-top: 100px;
+  }
+
+  .pay-and-feed {
+    text-align: center;
+  }
+
+  .pay-feed-header {
+    margin: 80px 20px 0 0;
+  }
+
+  .pay-border:nth-child(2) {
+    margin-top: 50px;
+  }
+
+  .pay-border {
+    margin: 50px auto 0;
+    max-width: 93.75%;
+    display: flex;
+    grid-gap: 2vw;
+  }
+
+  .pay-feed-block {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 51px;
+  }
+
+  .pay-img {
+    width: 100%;
+  }
+
+  .pay-monkey {
+    margin-top: 0px;
+  }
+
+  .pay-feed-text {
+    margin: 40px auto 0;
+    max-width: 93.75%;
+  }
+
+  .pay-text {
+    margin-top: 33px;
+    font-size: 18px;
+  }
+
+  .feed-btn-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .pay-feed-btn {
+    margin-top: 57px;
+    width: 290px;
+  }
+}
+
+@media (max-width: 400px) {
+  .pay-feed-bcg {
+    margin-top: 44px;
+  }
+
+  .pay-feed-header {
+    margin-right: 0;
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .pay-border {
+    margin-top: 54px;
+  }
+
+  .pay-border:nth-child(2) {
+    margin-top: 44px;
+  }
+
+  .pay-border:nth-child(6) {
+    margin-top: 50px;
+  }
+
+  .pay-line {
+    margin-left: 4px;
+  }
+
+  .pay-text {
+    margin-top: 28px;
+    margin-left: 9px;
+    width: 93.75%;
+  }
+
+  .pay-text-2 {
+    margin: 31px auto 0;
+    width: 97%;
+  }
+
+  .delete-text {
+    display: none;
+  }
+
+  .pay-feed-block {
+    margin-top: 30px;
+  }
+
+  .pay-feed-text {
+    margin-top: 26px;
+  }
+
+  .pay-feed-btn {
+    width: 300px;
+    height: 45px;
+    margin-top: 47px;
+  }
+}

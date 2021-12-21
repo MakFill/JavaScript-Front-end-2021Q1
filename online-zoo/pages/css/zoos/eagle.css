@@ -1,0 +1,41 @@
+@import url(../style.css);
+@import url(../header.css);
+@import url(../donation-difference.css);
+
+@import url(./media1200.css);
+@import url(../footer.css);
+@import url(./panda.css);
+
+.panda {
+  background-image: url(../../../assets/icons/zoos/panda.svg);
+}
+
+.eagle {
+  background-image: url(../../../assets/icons/zoos/eagle-active.svg);
+}
+
+.don-difference {
+  grid-template-columns: 8.2fr 3.8fr;
+}
+
+.info__txt {
+  display: grid;
+  grid-template-columns: 1140fr 260fr;
+}
+
+@media (max-width: 1400px) {
+  .info__main {
+    grid-template-columns: 7fr 5fr !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .info__main_wrapper .info__main_head {
+    margin-top: 20px !important;
+  }
+
+  .info__main_btn {
+    margin-top: 30px;
+    margin-left: calc(50vw - 120px);
+  }
+}

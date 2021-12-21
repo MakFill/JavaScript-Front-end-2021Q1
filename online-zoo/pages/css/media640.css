@@ -1,0 +1,233 @@
+@media (max-width: 640px) {
+  /* Welcome to the zoo / How it works */
+  .welcome-cont {
+    position: relative;
+    margin-top: 9.2vw;
+    width: 100%;
+  }
+
+  .welcome-cont img {
+    position: relative;
+    min-width: 100vw;
+  }
+
+  .welcome-zoo {
+    margin-bottom: 5.5vw;
+  }
+
+  .welcome-zoo img {
+    margin-top: 7.2vw;
+    height: 68.44vw;
+  }
+
+  .welcome-text,
+  .how-text {
+    width: calc(100% - 6.3vw);
+    margin: 2vw auto;
+  }
+
+  .welcome-text p,
+  .how-text p {
+    margin-top: 4.75vw;
+  }
+
+  .how-work {
+    margin-top: 33px;
+  }
+
+  .welcome-text p,
+  .welcome-text h2,
+  .how-text p,
+  .how-text h2 {
+    display: inline-block;
+    width: 100%;
+  }
+
+  /* Your donation makes a difference */
+  .don-difference-bcg {
+    margin-top: 91px;
+    display: block;
+  }
+
+  .don-difference {
+    width: 91vw;
+  }
+
+  .don-text {
+    text-align: center;
+  }
+
+  .don-par {
+    margin-top: 30px;
+  }
+
+  .donate-form {
+    margin-top: 4.42vw;
+  }
+
+  .donate-btn p {
+    margin-left: 3.5vw;
+  }
+
+  .donate-btn .union-img {
+    width: 75px;
+  }
+
+  /* Meet some our pets */
+
+  .our-pets {
+    margin-top: 15.65vw;
+  }
+
+  .pet-header h2 {
+    grid-column-start: 3;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0.15vw;
+  }
+
+  .pet-par {
+    display: block;
+    width: 94vw;
+    margin: 5vw auto 0;
+  }
+
+  .pet-modals {
+    display: none;
+  }
+}
+
+@media (max-width: 611px) {
+  /* watch-online */
+  .watch-online {
+    display: flex;
+    height: min-content;
+    background-size: 100% auto;
+    background-position: center;
+  }
+
+  .watch-header h1 {
+    font-size: 40px;
+    line-height: 48.76px;
+  }
+
+  .watch-btn {
+    margin-top: 4.9vw;
+    margin-left: 3.3vw;
+    width: 300px;
+    height: 45px;
+  }
+
+  .watch-online {
+    /* height: 686px; */
+    flex-wrap: wrap;
+    background-image: none;
+    /* background-position: bottom; */
+  }
+
+  .watch-header {
+    padding: 7vw 3vw 0 3vw;
+  }
+
+  .watch-text {
+    grid-template-columns: 4fr;
+    margin: 4vw 3vw 0 3vw;
+  }
+
+  .small-bcg {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media (max-width: 430px) {
+  /* Your donation makes a difference */
+  .don-difference-bcg {
+    margin-top: 45px;
+    padding: 0;
+  }
+
+  .don-difference {
+    display: block;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+
+  .quick-donate {
+    width: 300px;
+    margin-left: calc(50% - 150px);
+  }
+
+  .don-header h3 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .don-par {
+    margin-top: 8.75vw;
+  }
+
+  .donate-input {
+    height: 45px;
+    width: 300px;
+  }
+
+  .donate-form {
+    margin: 30px 0 0 0;
+  }
+
+  input[type="number"] {
+    height: 45px;
+    width: 100%;
+    padding-left: 41px;
+  }
+
+  input[type="number"],
+  .input-dollar {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .input-dollar {
+    left: 26px;
+  }
+
+  .donate-btn {
+    width: 300px;
+    height: 45px;
+  }
+
+  .donate-btn p {
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 2%;
+    -webkit-border-radius: 2%;
+    -moz-border-radius: 2%;
+    -ms-border-radius: 2%;
+    -o-border-radius: 2%;
+  }
+
+  .union-img {
+    margin-top: 1px;
+    width: 60px;
+    height: 100%;
+    border-radius: 8%;
+    -webkit-border-radius: 8%;
+    -moz-border-radius: 8%;
+    -ms-border-radius: 8%;
+    -o-border-radius: 8%;
+  }
+
+  /* Meet some our pets */
+
+  .pet-header h2 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .pet-par p {
+    font-size: 18px;
+    line-height: 150%;
+  }
+}

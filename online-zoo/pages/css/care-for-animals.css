@@ -1,0 +1,397 @@
+.care__text {
+  margin-top: 136px;
+}
+
+.care__text h2 {
+  width: 655px;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 66px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #00a092;
+  margin: 0 auto;
+  display: block;
+}
+
+.care__text p {
+  width: 537px;
+  margin-top: 50px;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 130%;
+  text-align: center;
+  color: #20113d;
+  margin: 50px auto 0;
+  display: block;
+}
+
+.care__blocks_img {
+  height: 658px;
+  width: 920px;
+  background-image: url(../../assets/images/koala.png);
+}
+
+.care__blocks {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.care__blocks_img + .care__blocks_block,
+.care__blocks_block + .care__blocks_block {
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+.care__blocks_block:nth-child(2) {
+  margin-top: 0;
+}
+
+.care__blocks_block:nth-child(3) {
+  margin-left: 0;
+}
+
+.care__blocks_block {
+  position: relative;
+  width: 440px;
+  height: 658px;
+  background: #20113d;
+  text-decoration: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.care__blocks_block:hover {
+  transition: 0.5s;
+  transform: scale(1.047, 1.03);
+  -webkit-transform: scale(1.047, 1.03);
+  -moz-transform: scale(1.047, 1.03);
+  -ms-transform: scale(1.047, 1.03);
+  -o-transform: scale(1.047, 1.03);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.care__blocks_block-img {
+  border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  -ms-border-radius: 5px 5px 0 0;
+  -o-border-radius: 5px 5px 0 0;
+}
+
+.care__blocks_par {
+  margin: 30px 25px 0 25px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #fff;
+}
+
+.care__blocks_btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: 0;
+  margin-bottom: 50px;
+  margin-left: calc(50% - 71px);
+  padding-left: 28.5px;
+  width: 142px;
+  height: 74px;
+  border: none;
+  background-color: transparent;
+  background-image: url(../../assets/icons/union-orange.svg);
+  background-repeat: no-repeat;
+  background-position: 90px 50%;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #f58021;
+  font-family: "Montserrat";
+}
+
+.care__blocks_btn:hover {
+  background-color: #f58021;
+  background-image: url(../../assets/icons/union.svg);
+  color: #fff;
+  cursor: pointer;
+}
+
+.care__foto {
+  margin-top: 150px;
+  margin-left: calc(50% - 700px);
+}
+
+.care__foto_second {
+  display: none;
+}
+
+@media (max-width: 1400px) {
+  .care__text {
+    margin-top: 150px;
+  }
+
+  .care__text h2 {
+    margin-left: 255px;
+  }
+
+  .care__text p {
+    margin-top: 30px;
+    margin-left: 349px;
+  }
+
+  .care__blocks {
+    margin-top: 50px;
+  }
+
+  .care__blocks_img {
+    height: 470px;
+    width: 930px;
+    background-image: url(../../assets/images/koala1400.png);
+  }
+
+  .care__blocks {
+    justify-content: center;
+  }
+
+  .care__blocks_par {
+    margin-top: 26px;
+  }
+
+  .care__blocks_block {
+    width: 455px;
+    height: 641px;
+  }
+
+  .care__blocks_img + .care__blocks_block,
+  .care__blocks_block + .care__blocks_block {
+    margin-left: 20px;
+    margin-top: 17px;
+  }
+
+  .care__blocks_block:nth-child(2n) {
+    margin-left: 0;
+  }
+
+  .care__blocks_block-img {
+    width: 100%;
+    height: 373px;
+  }
+
+  .care__blocks_btn {
+    margin-bottom: 41px;
+  }
+
+  .care__foto {
+    margin: 152px 0 0 0;
+    width: 100%;
+    display: none;
+  }
+
+  .care__foto_second {
+    display: block;
+  }
+}
+
+@media (max-width: 1180px) {
+  .care__text h2,
+  .care__text p {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 960px) {
+  .care {
+    overflow: hidden;
+  }
+
+  .care__text {
+    margin-top: 80px;
+  }
+
+  .care__text h2,
+  .care__text p {
+    max-width: 600px;
+  }
+
+  .care__text p {
+    width: auto;
+  }
+
+  .care__blocks {
+    margin-top: 70px;
+    height: 297px;
+    width: max-content;
+    flex-wrap: nowrap;
+  }
+
+  .care__blocks_img {
+    display: none;
+  }
+
+  .care__blocks_block:nth-child(n) {
+    margin: 0 calc(50vw - 300px);
+  }
+
+  .care__blocks_block {
+    display: flex;
+    width: 600px;
+    height: 297px;
+  }
+
+  .care__blocks_block-img {
+    width: 50%;
+    height: 100%;
+    border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 0 0 5px;
+    -moz-border-radius: 5px 5px 0 0;
+    -ms-border-radius: 5px 5px 0 0;
+    -o-border-radius: 5px 5px 0 0;
+  }
+
+  .care__blocks_par {
+    margin-top: 66px;
+  }
+
+  .care__blocks_btn {
+    margin-bottom: 34px;
+    margin-left: 379px;
+  }
+
+  .care-markers {
+    display: block;
+    margin: 48px auto 0;
+    width: 110px;
+    height: 8px;
+
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .marker-black {
+    background-image: url(../../assets/icons/marker-black.svg);
+    width: 8px;
+  }
+
+  .marker-black-active {
+    background-image: url(../../assets/icons/marker-black-active.svg);
+    width: 8px;
+  }
+
+  .care__btn .pets-slider-btn {
+    margin-top: 50px;
+  }
+
+  .care__foto {
+    margin: 100px 0 0 0;
+    /* height: 380px; */
+    width: 100%;
+  }
+}
+
+@media (max-width: 645px) {
+  .care__foto {
+    height: 380px;
+  }
+}
+
+@media (max-width: 638px) {
+  .care__foto {
+    height: auto;
+  }
+}
+
+@media (max-width: 615px) {
+  .care__text {
+    margin-top: 50px;
+  }
+
+  .care__text h2 {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+    max-width: 90%;
+    min-width: 300px;
+  }
+
+  .care__text p {
+    margin-top: 25px;
+    font-size: 18px;
+    line-height: 150%;
+    max-width: 87%;
+    min-width: 275px;
+  }
+
+  .care__blocks {
+    margin-top: 28px;
+    height: 570px;
+  }
+
+  .care__blocks_block {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 570px;
+  }
+
+  .care__blocks_block:nth-child(n) {
+    margin: 0 calc(50vw - 150px);
+  }
+
+  .care__blocks_block-img {
+    width: 100%;
+    height: 352px;
+    border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -ms-border-radius: 5px 5px 0 0;
+    -o-border-radius: 5px 5px 0 0;
+  }
+
+  .care__blocks_par {
+    margin: -82px 27px 0 27px;
+  }
+
+  .care__blocks_btn {
+    margin-bottom: 20px;
+    margin-left: calc(50% - 71px);
+  }
+
+  .care-markers {
+    margin-top: 30px;
+  }
+
+  .care__btn .pets-slider-btn {
+    width: 300px;
+    height: 45px;
+    background-position: 245px 50%;
+  }
+
+  .care__btn .pets-slider-btn p {
+    margin-left: 29px;
+    text-transform: capitalize;
+  }
+
+  .care__foto {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 330px) {
+  .care__foto {
+    height: 189px;
+  }
+}

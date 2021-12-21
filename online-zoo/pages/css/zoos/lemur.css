@@ -1,0 +1,36 @@
+@import url(../style.css);
+@import url(../header.css);
+@import url(../donation-difference.css);
+
+@import url(./media1200.css);
+@import url(../footer.css);
+
+@import url(./panda.css);
+/* 
+@import url(../style.css);
+@import url(../header.css);
+@import url(../footer.css);
+@import url(../donation-difference.css);
+@import url(./panda.css); */
+
+.panda {
+  background-image: url(../../../assets/icons/zoos/panda.svg);
+}
+
+.lemur {
+  background-image: url(../../../assets/icons/zoos/lemur-active.svg);
+}
+
+.don-difference {
+  grid-template-columns: 8.1fr 3.9fr;
+}
+
+.info__txt {
+  grid-template-columns: 1161fr 239fr;
+}
+
+@media (max-width: 1400px) {
+  .info__main {
+    grid-template-columns: 6fr 6fr !important;
+  }
+}
